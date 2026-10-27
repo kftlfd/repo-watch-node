@@ -66,8 +66,8 @@ export function createFastifyServer({
   app.register(fastifySwagger, {
     openapi: {
       info: {
-        title: 'GitHub Realease Notifications API',
-        description: 'Subscribe to email notifications for new releases of GitHub reppo',
+        title: 'GitHub Release Notifications API',
+        description: 'Subscribe to email notifications for new releases of GitHub repo',
         version: '1.0.0',
       },
     },
