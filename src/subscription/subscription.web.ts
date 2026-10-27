@@ -1,7 +1,7 @@
 import type { FastifyPluginCallbackZod } from 'fastify-type-provider-zod';
 import z from 'zod';
 
-import { httpStatus } from '@/utils/html.js';
+import { httpStatus } from '@/utils/http.js';
 import { OpenApiTag } from '@/utils/openapi.js';
 
 import type { SubscriptionService } from './subscription.service.js';

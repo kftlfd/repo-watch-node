@@ -11,7 +11,7 @@ import {
   createMockRepoSubscriptionsQueue,
 } from '@/test/mocks.js';
 import { expectErr, expectOk } from '@/test/utils/result.js';
-import { httpErrors } from '@/utils/html.js';
+import { httpErrors } from '@/utils/http.js';
 import { sleep } from '@/utils/sleep.js';
 
 import { createFetchWithRetryFn, createProcessRepositoryFn } from './scanner.loop.js';

@@ -20,7 +20,7 @@ import {
   createMockTokenService,
 } from '@/test/mocks.js';
 import { expectErrAsync, expectOkAsync } from '@/test/utils/result.js';
-import { httpErrors } from '@/utils/html.js';
+import { httpErrors } from '@/utils/http.js';
 
 import { createSubscriptionService } from './subscription.service.js';
 
