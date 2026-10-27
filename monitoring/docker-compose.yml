@@ -4,7 +4,7 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - ./.data/prometheus:/prometheus
+      - prometheus-data:/prometheus
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     extra_hosts:
       - host.docker.internal:host-gateway
@@ -16,6 +16,10 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
     volumes:
-      - ./.data/grafana:/var/lib/grafana
+      - grafana-data:/var/lib/grafana
       - ./grafana/dashboards:/etc/grafana/dashboards
       - ./grafana/provisioning:/etc/grafana/provisioning
+
+volumes:
+  prometheus-data:
+  grafana-data:
