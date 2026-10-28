@@ -1,6 +1,6 @@
 services:
   app:
-    image: kftlfd/repo-watch:1.0
+    image: kftlfd/repo-watch-node:1.0
     build: .
     ports:
       - 3000:3000
